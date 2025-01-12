@@ -1,0 +1,48 @@
+﻿@model ProjectManagement.ViewModels.ActivityViewModel.RegisterActivityViewModel
+
+@{
+    ViewData["Title"] = "Página de Cadastro";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(x => x.TaskId)
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <label class="form-label"><strong>Título</strong></label>
+                @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(x => x.Title)
+                </span>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label"><strong>Status</strong></label>
+                @Html.DropDownListFor(x => x.StatusId, ViewBag.Status as List<SelectListItem>, new { @class = "form-select" })
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(x => x.Title)
+                </span>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-8">
+            <label class="form-label"><strong>Descrição</strong></label>
+            @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(x => x.Description)
+            </span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <input type="submit" class="btn btn-dark text-white" value="Cadastrar"/>
+                <a href="/Activity/Index?idTask=@Model.TaskId" class="btn btn-secondary">Voltar</a>
+            </div>
+        </div>
+    </div>
+
+}
+

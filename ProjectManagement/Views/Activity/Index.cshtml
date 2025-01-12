@@ -1,0 +1,92 @@
+﻿@using ProjectManagement.Models.Enums
+@model List<ConsultActivityViewModel>
+@{
+    ViewData["Title"] = "Kanban";
+
+}
+
+
+<div class="container mb-3 mt-3 ">
+    <div>
+        <a href="/Activity/Register?idTask=@ViewBag.TaskId" class="btn btn-danger text-white"> <strong>Adicionar Atividade</strong></a>
+        <a href="/TaskManagement/Index" class="btn btn-dark text-white"> <strong>Retornar para Tarefas</strong></a>
+
+    </div>
+</div>
+
+@if (Model != null && Model.Count > 0)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Pendente</h1>
+
+                @foreach (var item in Model.Where(x => x.StatusId == (int)Status.Pending))
+                {
+                    <div class="card mb-3">
+                        <h5 class="card-header bg-info text-white" style="height:40px"></h5>
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Title</h5>
+                            <p class="card-text">@item.Description</p>
+                            <a href="/Activity/ChangeCard?idActivity=@item.Id" class="btn btn-dark">Iniciar Tarefa</a>
+                        </div>
+
+                        <div class="card-footer bg-info text-white">
+                            @item.CreatedDate.ToString("dd/MM/yyyy")
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+
+            <div class="col-md-4">
+                <h1>Em Andamento</h1>
+
+                @foreach (var item in Model.Where(x => x.StatusId == (int)Status.InProgress))
+                {
+                    <div class="card mb-3">
+                        <h5 class="card-header bg-warning text-white" style="height:40px"></h5>
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Title</h5>
+                            <p class="card-text">@item.Description</p>
+                            <a href="/Activity/ChangeCard?idActivity=@item.Id" class="btn btn-dark">Concluir Tarefa</a>
+                        </div>
+
+                        <div class="card-footer  bg-warning text-white">
+                            @item.CreatedDate.ToString("dd/MM/yyyy")
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="col-md-4">
+                <h1>Finalizados</h1>
+
+                @foreach (var item in Model.Where(x => x.StatusId == (int)Status.Finished))
+                {
+                    <div class="card mb-3">
+                        <h5 class="card-header bg-success text-white" style="height:40px"></h5>
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Title</h5>
+                            <p class="card-text">@item.Description</p>
+                            <a class="btn btn-dark" href="/Activity/Delete?idActivity=@item.Id" onclick="return confirm('Deseja realmente excluir este card?')">Deletar Atividade</a>
+                        </div>
+
+                        <div class="card-footer bg-success text-white">
+                            @item.CreatedDate.ToString("dd/MM/yyyy")
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <p>Não há Atividades cadastradas nessa Tarefa.</p>
+
+    </div>
+}
+

@@ -1,0 +1,50 @@
+﻿@model List<ProjectManagement.ViewModels.TaskViewModel.ConsultTaskViewModel>
+@{
+    ViewData["Title"] = "Tarefas";
+
+}
+
+
+@if (Model != null && Model.Count > 0)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+
+                @foreach (var item in Model)
+                {
+
+
+                    <div class="card  mb-4">
+                        <div class="card-header">
+                            @item.Name
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">@item.Description</p>
+                            <a href="/Activity/Index?idTask=@item.Id" class="btn btn-dark">Gerenciar Atividades</a>
+                            <a href="/TaskManagement/Edit?idTask=@item.Id" class="btn btn-dark">Editar Tarefa</a>
+                            <a href="/TaskManagement/ArchivedTask?idTask=@item.Id" class="btn btn-danger">Arquivar Tarefa</a>
+                            
+
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+
+}
+else
+{
+    <div class="container">
+        <div class="text-center">
+            <p>Não há Tarefas cadastradas.</p>
+
+        </div>
+    </div>
+}
+
+
+

@@ -1,0 +1,47 @@
+﻿@model List<ProjectManagement.ViewModels.TaskViewModel.ConsultTaskViewModel>
+@{
+    ViewData["Title"] = "Tarefas Arquivadas";
+
+}
+
+
+@if (Model != null && Model.Count > 0)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h1 class="text-danger"><strong>Tarefas Arquivadas</strong></h1>
+                @foreach (var item in Model)
+                {
+                    <div class="card  mb-4">
+                        <div class="card-header">
+                            @item.Name
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">@item.Description</p>
+                            <a href="/TaskManagement/ActiveTask?idTask=@item.Id" class="btn btn-dark">Ativar Tarefa</a>
+@*                             <a href="/TaskManagement/Delete?idTask=@item.Id" class="btn btn-danger">Deletar Tarefa</a>
+ *@
+                            <a class="btn btn-dark" href="/TaskManagement/Delete?idTask=@item.Id" onclick="return confirm('Deseja realmente excluir esta tarefa?')">Deletar Tarefa</a>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+
+}
+else
+{
+    <div class="container">
+        <div class="text-center">
+            <p>Não há Tarefas cadastradas.</p>
+
+        </div>
+    </div>
+}
+
+
+
