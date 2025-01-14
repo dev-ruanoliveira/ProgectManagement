@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ruan1\\OneDrive\\Área de Trabalho\\Projetos\\MVC\\ProjectManagement\\ProjectManagement\\ProjectManagement\\ProjectManagement.csproj": {}
+    "C:\\Users\\ruan1\\Source\\Repos\\ProgectManagement\\ProjectManagement\\ProjectManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ruan1\\OneDrive\\Área de Trabalho\\Projetos\\MVC\\ProjectManagement\\ProjectManagement\\ProjectManagement\\ProjectManagement.csproj": {
+    "C:\\Users\\ruan1\\Source\\Repos\\ProgectManagement\\ProjectManagement\\ProjectManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ruan1\\OneDrive\\Área de Trabalho\\Projetos\\MVC\\ProjectManagement\\ProjectManagement\\ProjectManagement\\ProjectManagement.csproj",
+        "projectUniqueName": "C:\\Users\\ruan1\\Source\\Repos\\ProgectManagement\\ProjectManagement\\ProjectManagement.csproj",
         "projectName": "ProjectManagement",
-        "projectPath": "C:\\Users\\ruan1\\OneDrive\\Área de Trabalho\\Projetos\\MVC\\ProjectManagement\\ProjectManagement\\ProjectManagement\\ProjectManagement.csproj",
+        "projectPath": "C:\\Users\\ruan1\\Source\\Repos\\ProgectManagement\\ProjectManagement\\ProjectManagement.csproj",
         "packagesPath": "C:\\Users\\ruan1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ruan1\\OneDrive\\Área de Trabalho\\Projetos\\MVC\\ProjectManagement\\ProjectManagement\\ProjectManagement\\obj\\",
+        "outputPath": "C:\\Users\\ruan1\\Source\\Repos\\ProgectManagement\\ProjectManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

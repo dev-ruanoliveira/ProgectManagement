@@ -64,6 +64,8 @@ namespace ProjectManagement.Controllers
                     };
 
                     await _taskRepository.RegisterTask(task);
+                    TempData["MessageSuccess"] = "Tarefa cadastrada com sucesso!";
+
                 }
                 catch (Exception ex)
                 {
@@ -114,6 +116,8 @@ namespace ProjectManagement.Controllers
                         task.IsAtive = viewModel.IsAtive;
 
                         await _taskRepository.EditTask(task);
+                        TempData["MessageSuccess"] = "Tarefa editada com sucesso!";
+
                     }
                     else
                     {
@@ -142,7 +146,7 @@ namespace ProjectManagement.Controllers
                 }
                 else
                 {
-                    TempData["MessageWarning"] = "Tarefa não encontrada.";
+                    TempData["MessageAlert"] = "Tarefa não encontrada.";
 
                 }
             }
@@ -158,7 +162,7 @@ namespace ProjectManagement.Controllers
         public async Task<IActionResult> ArchivedTasks()
         {
             var tasksViewModel = new List<ConsultTaskViewModel>();
-            
+
             try
             {
                 var tasks = await _taskRepository.GetAllTasksInactive();
@@ -194,11 +198,12 @@ namespace ProjectManagement.Controllers
                 task.IsAtive = true;
 
                 await _taskRepository.EditTask(task);
-            }
-            catch (Exception)
-            {
+                TempData["MessageSuccess"] = $"Tarefa {task.Name} ativada com sucesso!";
 
-                throw;
+            }
+            catch (Exception ex)
+            {
+                TempData["MessageErro"] = ex.Message;
             }
             return RedirectToAction("ArchivedTasks", "TaskManagement");
         }
@@ -212,11 +217,13 @@ namespace ProjectManagement.Controllers
                 task.IsAtive = false;
 
                 await _taskRepository.EditTask(task);
-            }
-            catch (Exception)
-            {
 
-                throw;
+                TempData["MessageSuccess"] = $"Tarefa {task.Name} arquivada com sucesso!";
+
+            }
+            catch (Exception ex)
+            {
+                TempData["MessageErro"] = ex.Message;
             }
             return RedirectToAction("Index", "TaskManagement");
         }

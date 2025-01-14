@@ -61,7 +61,7 @@ namespace ProjectManagement.Controllers
                 .Select(e => new SelectListItem
                 {
                     Value = ((int)e).ToString(),
-                    Text = e.ToString()
+                    Text = (int)e == 1 ? "Pendente" : (int)e == 2 ? "Em Andamento" : "Finalizado"
                 }).ToList();
 
             return View(new RegisterActivityViewModel() { TaskId = idTask });
@@ -101,7 +101,7 @@ namespace ProjectManagement.Controllers
                 .Select(e => new SelectListItem
                 {
                     Value = ((int)e).ToString(),
-                    Text = e.ToString()
+                    Text = (int)e == 1 ? "Pendente" : (int)e == 2 ? "Em Andamento" : "Finalizado"
                 }).ToList();
 
             return RedirectToAction("Index", "Activity", new { idTask = viewModel.TaskId });
@@ -135,6 +135,8 @@ namespace ProjectManagement.Controllers
                 taskId = activity.TaskId;
 
                 await _activityRepository.DeleteActivity(activity);
+
+                TempData["MessageSuccess"] = "Atividade excluída com sucesso!";
 
             }
             catch (Exception ex)

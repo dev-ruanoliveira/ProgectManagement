@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "van/AzOR1Vk=",
+  "dgSpecHash": "Co41CX87nbk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ruan1\\OneDrive\\Área de Trabalho\\Projetos\\MVC\\ProjectManagement\\ProjectManagement\\ProjectManagement\\ProjectManagement.csproj",
+  "projectFilePath": "C:\\Users\\ruan1\\Source\\Repos\\ProgectManagement\\ProjectManagement\\ProjectManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ruan1\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ruan1\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

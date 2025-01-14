@@ -17,51 +17,51 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjectManagement
 build_property.RootNamespace = ProjectManagement
-build_property.ProjectDir = C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\MVC\ProjectManagement\ProjectManagement\ProjectManagement\
+build_property.ProjectDir = C:\Users\ruan1\Source\Repos\ProgectManagement\ProjectManagement\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\MVC\ProjectManagement\ProjectManagement\ProjectManagement
+build_property.MSBuildProjectDirectory = C:\Users\ruan1\Source\Repos\ProgectManagement\ProjectManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/Activity/Index.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/Activity/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/Activity/Register.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/Activity/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/TaskManagement/ArchivedTasks.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/TaskManagement/ArchivedTasks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza01hbmFnZW1lbnRcQXJjaGl2ZWRUYXNrcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/TaskManagement/Edit.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/TaskManagement/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza01hbmFnZW1lbnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/TaskManagement/Index.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/TaskManagement/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza01hbmFnZW1lbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/TaskManagement/Register.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/TaskManagement/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza01hbmFnZW1lbnRcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/_ViewImports.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/_ViewStart.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruan1/OneDrive/Área de Trabalho/Projetos/MVC/ProjectManagement/ProjectManagement/ProjectManagement/Views/Shared/_Layout.cshtml]
+[C:/Users/ruan1/Source/Repos/ProgectManagement/ProjectManagement/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kdbm0rem72
